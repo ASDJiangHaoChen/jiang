@@ -1,0 +1,468 @@
+jbMap = window.jbMap || {};
+function jbViaJs(locationId) {
+    var _f = undefined;
+    var _fconv = 'jbMap[\"' + locationId + '\"]';
+    try {
+        _f = eval(_fconv);
+        if (_f != undefined) {
+            _f()
+        }
+    } catch(e) {}
+}
+function jbLoader(closetag) {
+    var jbTest = null,
+    jbTestPos = document.getElementsByTagName("span");
+    for (var i = 0; i < jbTestPos.length; i++) {
+        if (jbTestPos[i].className == "jbTestPos") {
+            jbTest = jbTestPos[i];
+            break
+        }
+    }
+    if (jbTest == null) return;
+    if (!closetag) {
+        document.write("<span id=jbTestPos_" + jbTest.id + " style=display:none>");
+        jbViaJs(jbTest.id);
+        return
+    }
+    document.write("</span>");
+    var real = document.getElementById("jbTestPos_" + jbTest.id);
+    for (var i = 0; i < real.childNodes.length; i++) {
+        var node = real.childNodes[i];
+        if (node.tagName == "SCRIPT" && /closetag/.test(node.className)) continue;
+        jbTest.parentNode.insertBefore(node, jbTest);
+        i--
+    }
+    jbTest.parentNode.removeChild(jbTest);
+    real.parentNode.removeChild(real)
+}
+
+var ggg;
+¡¡¡¡if (getCookie("ggg")=="ok1"){ 
+¡¡¡¡¡¡var logo_m='<a href="http://vps.zzidc.com/tongji/jb51.html" target="_blank"><img src="http://files.jb51.net/image/zzidc370-1.gif" width=370 height=60 /></a>';
+¡¡¡¡setCookie("ggg","ok2"); 
+¡¡¡¡}else if(getCookie("ggg")=="ok2"){
+	¡¡var logo_m='<a href="http://vps.zzidc.com/tongji/jb51.html" target="_blank"><img src="http://files.jb51.net/image/zzidc370-2.gif" width=370 height=60 /></a>';
+¡¡¡¡setCookie("ggg","ok3"); 
+	}else{
+	¡¡var logo_m='<a href="http://www.zzidc.com/main/huodong/registspread.html" target="_blank"><img src="http://files.jb51.net/image/zzidc370-3.gif" width=370 height=60 /></a>';
+¡¡¡¡setCookie("ggg","ok1"); 
+	}
+//var logo_m='<a href="http://www.zzidc.com/main/huodong/allwuzhe/pand_2453.html" target="_blank"><img src="http://files.jb51.net/image/zzidc370.gif" width=370 height=60 /></a>';
+var logo_r='<a href="https://www.mysubmail.com/sms?s=jb51" target="_blank"><img src="http://files.jb51.net/image/submail_370.gif" width=370 height=60 /></a>';
+
+var aliyun1000='<div class="mainlr"><a href="http://click.aliyun.com/m/10001/" target="_blank"><img src="http://files.jb51.net/image/ali_1000_2.jpg" alt="cdnoss" width="1000" height="60"></a></div><div class="blank5"></div>';
+
+var idctu="";
+idctu+='<scr'+'ipt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scr'+'ipt><!--thea+300*250--><ins class="adsbygoogle"style="display:inline-block;width:300px;height:250px"data-ad-client="ca-pub-6389290466807248"data-ad-slot="6788945816"></ins><scr'+'ipt>(adsbygoogle=window.adsbygoogle||[]).push({});</scr'+'ipt><div class="blank10"></div>';
+idctu+='<A href="http://click.aliyun.com/m/9812/" target=_blank><IMG alt="" src="http://files.jb51.net/image/ali_300_2.gif" width="300" height="100"></A>';
+
+var aliwenzi='<li><a href="http://click.aliyun.com/m/8070/" target="_blank"><span style="color:red;">°¢ÀïÔÆÃâ·ÑĞé»ú£«Ä¾Âí²éÉ±½ö6Ôª</span></a></li>';
+var ali237='<li><A href="http://click.aliyun.com/m/7514/" target=_blank><IMG alt="" src="http://files.jb51.net/image/ali_237.jpg" width="237" height="60"></A></li>';
+
+var tgtxt="";
+tgtxt+='<div id="txtlink"><ul>';
+tgtxt+='<li><a href="http://www.jsll.me" target="_blank"><span style="color:red;">µÍ¼Û³öÊÛÁ÷Á¿10000IPÖ»Ğè8Ôª</span></a></li>';
+tgtxt+=aliwenzi;
+tgtxt+='<li><a href="http://www.99-idc.com" target="_blank"><span style="color:red;">16ºË16G¶À·ş°ÙÕ×´ø¿í899Ôª/ÔÂ|´´ÃÎÍøÂç</span></a></li>';
+tgtxt+='<li><a href="http://www.zoneidc.com/chaozhi/" target="_blank"><span style="color:red;">ÃÀ¹úÔÆ20Ôª/Ïã¸ÛÔÆ29Ôª/º«¹úÔÆ55Ôª</span></a></li>';
+
+tgtxt+='<li><a href="http://js.50bang.org/?formType=7858" target="_blank"><span style="color:blue;">×°Èí¼ş×¬Ç®£¬Ã¿Ì¨µçÄÔÃë×¬6.3Ôª</span></a></li>';
+tgtxt+='<li><a href="http://www.155idc.cn/rent/index.html" target="_blank"><span style="color:blue;">¡¶ÎŞÊÓCC/DDOS Ë«Ïß150Gµ¥»ú 899/ÔÂ¡·</span></a></li>';
+tgtxt+='<li><a href="http://www.vzidc.com/hzdl.asp/" target="_blank"><span style="color:blue;">Î¢×ÓÍøÂç Õ¿½­Ë«Ïß¸ß·À ¿¹15G 700ÔªÆğ</span></a></li>';
+tgtxt+='<li><a href="http://www.zitian.cn/Products/zhongyuan/overview.aspx" target="_blank"><span style="color:blue;">ÖĞÔ­µØÇø×î´óIDCÊı¾İÖĞĞÄ£¬Ê×ÔÂÍĞ¹ÜÃâ·Ñ</span></a></li>';
+
+tgtxt+='<li><a href="http://www.021.net" target="_blank"><span style="color:red;">ÖÚÉúÍøÂç »ùÓÚÔÆ¼ÆËãµÄ»¥ÁªÍø»ù´¡·şÎñÔËÓªÉÌ</span></a></li>';
+tgtxt+='<li><a href="http://www.tuidc.com" target="_blank"><span style="color:red;">·şÎñÆ÷×âÓÃ/ÍĞ¹Ü-ÓòÃû¿Õ¼ä/ÈÏ×¼ÌÚÓÓ¿Æ¼¼</span></a></li>';
+tgtxt+='<li><a href="http://www.enkj.com/special/20160315/" target="_blank"><span style="color:red;">BGPËÄÏß ÒÚ¶÷1U·şÎñÆ÷ÍĞ¹Ü3999Ôª/Äê</span></a></li>';
+tgtxt+='<li><A href="http://www.jjidc.com/" target=_blank><span style="color:red;">¾Å¾ÅÊı¾İ ¡ª ¹¤ĞÅ²¿ÈÏ¿ÉÕı¹æ×ÊÖÊIDC½ÓÈëÉÌ</span></A></li>';
+
+tgtxt+='<li><a href="http://www.33ip.com" target="_blank"><span style="color:blue;">·ãĞÅ¿Æ¼¼-½­ËÕË«Ïß10M±£Ö¤-399/Ôª</span></a></li>';
+tgtxt+='<li><a href="http://www.gwidc.com/" target="_blank"><span style="color:blue;">¸ÛÍåÔÆÖ÷»ú£¬ÎÈ¶¨¡¢°²È«²ÅÊÇÓ²µÀÀí</span></a></li>';
+tgtxt+='<li><a href="http://www.ssf.cc/" target="_blank"><span style="color:blue;">Ãâ±¸vps20/°Ù¶À799/Ë«Ïß350/45»¥Áª</span></a></li>';
+tgtxt+='<li><a href="http://www.xiaozhiyun.com/2016/" target="_blank"><span style="color:blue;">º«¹ú\Ïã¸Û\ÃÀ¹úÕ¾Èº·şÎñÆ÷ ¾ŞÅ£ÍøÂç</span></a></li>';
+
+tgtxt+='<li><a href="http://www.139w.com/" target="_blank"><span style="color:red;">¶¦µãÍøÂç°ÙÕ×¶ÀÏí·şÎñÆ÷½öĞè999Ôª</span></a></li>';
+tgtxt+='<li><a href="http://www.360jq.com/hkshuang.htm" target="_blank"><span style="color:red;">[Ïã¸ÛË«¸ß·À]ÎŞÊÓCC¡ïDDOS/¿°±È¹ã¶«£¡</span></a></li>';
+tgtxt+='<li><a href="http://www.cyidc.cc/" target="_blank"><span style="color:red;">³©ÓÎÍøÂç °Ù¶À·şÎñÆ÷ °üÅÜÂú 998Ôª</span></a></li>';
+tgtxt+='<li><a href="http://www.wdw6.com" target="_blank"><span style="color:red;">·şÎñÆ÷×âÓÃ  199ÔªÆğ</span></a></li>';
+
+tgtxt+='<li><a href="https://www.wsisp.net/sale/20170110/?jb51wz" target="_blank"><span style="color:blue;">¡ô¡ô2M´ø¿íĞéÄâÖ÷»ú 118/Äê¡ô¡ô</span></a></li>';
+tgtxt+='<li><a href="http://www.qy.com.cn" target="_blank"><span style="color:blue;">ÈºÓ¢ÔÆ·şÎñÆ÷ËÍ10M´ø¿í30G·ÀÓù,49ÔªÆğ</span></a></li>';
+tgtxt+='<li><a href="https://www.ku86.com/" target="_blank"><span style="color:blue;">°ÙM·şÎñÆ÷ÍĞ¹Ü ×âÓÃ</span></a></li>';
+tgtxt+='<li><a href="http://www.yinliuliang.com/?jb51" target="_blank"><span style="color:blue;">¡¾1000UVÁ÷Á¿Ö»Òª8Ã«¡¿»¹ÓĞµã»÷Á÷Á¿</span></a></li>';
+tgtxt+='</ul><DIV class=clearfix></DIV></div>';
+
+var tonglan1="";
+tonglan1+=tgtxt;
+tonglan1+='<div class="blank6"></div>';
+tonglan1+='<div class="topimg"><ul>';
+tonglan1+='<li><A href="http://www.west.cn/services/CloudHost/?ads=jb512014" target=_blank><IMG alt="" src="http://files.jb51.net/image/west263_237.gif" width="237" height="60"></A></li>';
+tonglan1+=ali237;
+tonglan1+='<li><IMG alt="" src="http://files.jb51.net/image/baiduyh_237.gif" width="237" height="60"></li>';
+tonglan1+='<li><A href="http://www.7e.hk/product/list/12254.html" target=_blank><IMG alt="" src="http://files.jb51.net/image/7ehk.gif" width="237" height="60"></A></li>';
+tonglan1+='</ul></div><div class="blank6"></div>';
+tonglan1+=aliyun1000;
+
+var tonglan1_2="";
+tonglan1_2+=aliyun1000;
+tonglan1_2+=tgtxt;
+tonglan1_2+='<div class="blank6"></div>';
+tonglan1_2+='<div class="topimg"><ul>';
+tonglan1_2+='<li><A href="http://www.7e.hk/product/list/12254.html" target=_blank><IMG alt="" src="http://files.jb51.net/image/7ehk.gif" width="237" height="60"></A></li>';
+tonglan1_2+='<li><A href="https://www.wsisp.net/sale/20170110/?jb51" target=_blank><IMG alt="" src="http://files.jb51.net/image/ws_237.gif" width="237" height="60"></A></li>';
+tonglan1_2+=ali237;
+tonglan1_2+='<li><IMG alt="" src="http://files.jb51.net/image/baiduyh_237.gif" width="237" height="60"></li>';
+tonglan1_2+='</ul></div><div class="blank6"></div>';
+
+var tonglan2='<a href="http://www.v01.cn" alt="ÉÏº£ÖÚÉú" target="_blank"><img src="http://files.jb51.net/image/zs960.gif" width="1000" height="60" border="0" /></a><div class="blank3"></div><a href="http://tuidc.com" alt="Ïã¸ÛÖ÷»ú ¹úÍâÖ÷»ú" target="_blank"><img src="http://files.jb51.net/image/host5_960.gif" width="1000" height="60" border="0" /></a>';
+var tonglan2_1='<a href="http://www.v01.cn" alt="ÉÏº£ÖÚÉú" target="_blank"><img src="http://files.jb51.net/image/zs960.gif" width="1000" height="60" border="0" /></a>';
+var tonglan2_2='<a href="http://www.zhimak.com/?ad=jb51" alt="" target="_blank"><img src="http://files.jb51.net/image/tengyou_gz.gif" width="1000" height="60" border="0" /></a>';
+
+var tonglan3_1='<div class="mainlr"><a href="http://www.qy.com.cn" target="_blank"><img src="http://files.jb51.net/image/qy_1000.gif" width="1000" height="60"></a></div><div class="blank5"></div>';
+
+var tonglan3_2='<div class="topimg"><ul>';
+tonglan3_2+='<li><A href="http://www.west.cn/?ads=jb512012" target=_blank><IMG alt="" src="http://files.jb51.net/image/west263_index.gif" width="237" height="60"></A></li>';
+tonglan3_2+='<li><A href="http://www.jjidc.com" target=_blank><IMG alt="" src="http://files.jb51.net/image/jjidc_237.gif" width="237" height="60"></A></li>';
+tonglan3_2+='<li><A href="http://www.enkj.com/encloud/" target=_blank><IMG alt="" src="http://files.jb51.net/image/enkj_237.gif" alt="ÔÆ·şÎñÆ÷" width="237" height="60"></A></li>';
+tonglan3_2+='<li><A href="http://www.cyidc.cc/" target=_blank><IMG alt="" src="http://files.jb51.net/image/cyidc_237.gif" width="237" height="60"></A></li>';
+tonglan3_2+='</ul></div>';
+
+var botad='<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>';
+botad+='<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="6445926239" data-override-format="true" data-page-url="http://www.jb51.net"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>';
+
+var idctu1='<div class="idc3"><a href="http://www.021.net" target="_blank"><h1>ÖÚÉúÍøÂç</h1><span>Æ·ÅÆ·şÎñÆ÷×âÓÃ</span> </a><a href="http://www.geisnic.com/" target="_blank"><h1>¼¯Ë¼ÍøÂç</h1><span>VPSÖ÷»ú</span> </a><a href="http://www.33ip.com" target="_blank"><h1>·ãĞÅ¿Æ¼¼</h1><span>IDC·şÎñÉÌ</span> </a></div>';
+
+var idctu2='<a href="http://tuidc.com" target="_blank"><img src="http://files.jb51.net/image/tengyou300.gif" width="300" height="100"></a>';
+idctu2+='<div class="blank10"></div><a href="http://www.enkj.com/encloud/" target="_blank"><img src="http://files.jb51.net/image/enkj_300.gif" alt="ÔÆ·şÎñÆ÷" width="300" height="100"></a>';
+/*******---------ÔÚÏß¹¤¾ßstart----------********/
+var toolsarr= new Array();
+toolsarr[0]=new Array();
+toolsarr[0][name]="ÔÚÏßXML/JSON»¥Ïà×ª»»¹¤¾ß";
+toolsarr[0]['link']="http://tools.jb51.net/code/xmljson";
+
+toolsarr[1]=new Array();
+toolsarr[1][name]="CSS´úÂë¹¤¾ß";
+toolsarr[1]['link']="http://tools.jb51.net/code/css";
+
+toolsarr[2]=new Array();
+toolsarr[2][name]="JSON´úÂë¹¤¾ß";
+toolsarr[2]['link']="http://tools.jb51.net/code/json";
+
+toolsarr[3]=new Array();
+toolsarr[3][name]="JavaScript´úÂë¸ñÊ½»¯¹¤¾ß";
+toolsarr[3]['link']="http://tools.jb51.net/code/js";
+
+toolsarr[4]=new Array();
+toolsarr[4][name]="JavaScript´úÂëÔÚÏß¼ÓÃÜ¹¤¾ß";
+toolsarr[4]['link']="http://tools.jb51.net/code/encodeTxt";
+
+toolsarr[5]=new Array();
+toolsarr[5][name]="JavaScriptÑ¹Ëõ/¸ñÊ½»¯/¼ÓÃÜ¹¤¾ß";
+toolsarr[5]['link']="http://tools.jb51.net/code/jscompress";
+
+toolsarr[6]=new Array();
+toolsarr[6][name]="ÔÚÏßJSON´úÂë¼ìÑé/¼ìÑé/ÃÀ»¯/¸ñÊ½»¯";
+toolsarr[6]['link']="http://tools.jb51.net/code/json";
+
+toolsarr[7]=new Array();
+toolsarr[7][name]="JavaScriptÕıÔòÔÚÏß²âÊÔ¹¤¾ß";
+toolsarr[7]['link']="http://tools.jb51.net/regex/javascript";
+
+toolsarr[8]=new Array();
+toolsarr[8][name]="UnixÊ±¼ä´Á(timestamp)×ª»»¹¤¾ß";
+toolsarr[8]['link']="http://tools.jb51.net/code/unixtime";
+
+toolsarr[9]=new Array();
+toolsarr[9][name]="ÔÚÏßJS½Å±¾Ğ£ÑéÆ÷´íÎó";
+toolsarr[9]['link']="http://www.jb51.net/tools/js_Debug.htm";
+
+toolsarr[10]=new Array();
+toolsarr[10][name]="ÔÚÏßÉú³É¶şÎ¬Âë¹¤¾ß(¼ÓÇ¿°æ)";
+toolsarr[10]['link']="http://tools.jb51.net/transcoding/jb51qrcode";
+
+toolsarr[11]=new Array();
+toolsarr[11][name]="ÔÚÏßXML¸ñÊ½»¯/Ñ¹Ëõ¹¤¾ß";
+toolsarr[11]['link']="http://tools.jb51.net/code/xmlformat";
+
+toolsarr[12]=new Array();
+toolsarr[12][name]="php´úÂëÔÚÏß¸ñÊ½»¯ÃÀ»¯¹¤¾ß";
+toolsarr[12]['link']="http://tools.jb51.net/code/phpformat";
+
+toolsarr[13]=new Array();
+toolsarr[13][name]="sql´úÂëÔÚÏß¸ñÊ½»¯ÃÀ»¯¹¤¾ß";
+toolsarr[13]['link']="http://tools.jb51.net/code/sqlcodeformat";
+
+toolsarr[14]=new Array();
+toolsarr[14][name]="RGBÑÕÉ«²éÑ¯¶ÔÕÕ±í_ÅäÉ«¹¤¾ß";
+toolsarr[14]['link']="http://tools.jb51.net/color/jPicker";
+
+toolsarr[15]=new Array();
+toolsarr[15][name]="ÔÚÏßÍ¼Æ¬¸ñÊ½×ª»»(jpg/bmp/gif/png)¹¤¾ß";
+toolsarr[15]['link']="http://tools.jb51.net/aideddesign/picext";
+
+toolsarr[16]=new Array();
+toolsarr[16][name]="ĞªºóÓïÔÚÏß²éÑ¯";
+toolsarr[16]['link']="http://tools.jb51.net/bianmin/xiehouyu";
+
+toolsarr=getArrayItems(toolsarr,11);
+
+var bctools='<li><a href="'+toolsarr[0]['link']+'" target="_blank"><font color="red">'+toolsarr[0][name]+'</font></a></li>';
+bctools+='<li><a href="'+toolsarr[1]['link']+'" target="_blank"><font color="red">'+toolsarr[1][name]+'</font></a></li>';
+bctools+='<li><a href="'+toolsarr[2]['link']+'" target="_blank">'+toolsarr[2][name]+'</a></li>';
+bctools+='<li><a href="'+toolsarr[3]['link']+'" target="_blank"><font color="red">'+toolsarr[3][name]+'</font></a></li>';
+bctools+='<li><a href="'+toolsarr[4]['link']+'" target="_blank">'+toolsarr[4][name]+'</a></li>';
+bctools+='<li><a href="'+toolsarr[5]['link']+'" target="_blank">'+toolsarr[5][name]+'</a></li>';
+bctools+='<li><a href="'+toolsarr[6]['link']+'" target="_blank">'+toolsarr[6][name]+'</a></li>';
+bctools+='<li><a href="'+toolsarr[7]['link']+'" target="_blank">'+toolsarr[7][name]+'</a></li>';
+bctools+='<li><a href="'+toolsarr[8]['link']+'" target="_blank">'+toolsarr[8][name]+'</a></li>';
+bctools+='<li><a href="'+toolsarr[9]['link']+'" target="_blank">'+toolsarr[9][name]+'</a></li>';
+/*******---------ÔÚÏß¹¤¾ßend----------********/
+
+
+var tonglanbd='<scr'+'ipt type="text/javascript">var cpro_id = "u336546";</script><script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></scr'+'ipt>';
+
+var art_up = '<scri'+'pt type="text/javascript" src="http://dm.jb51.net/gn3a1ecf96f1ccff30db1c7481b2b03ded00b3930a3ef6.js"></s'+'cript>';
+
+var art_down = '<script type="text/javascript">var cpro_id="u776243";(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"650",rsi1:"250",pat:"1",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"0",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",tft:"0",tlt:"1",ptbg:"90",piw:"0",pih:"0",ptp:"0"}</script><script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>';
+
+var art_down2 = '<scrip'+'t type="text/javascript" src="http://dm.jb51.net/tb3a1ecf96f1cdf739db1c7481b2b03ded00b3930a3ef6.js"></s'+'cript>';
+
+var side_up = '<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+side_up+='<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="2817964327"></ins><scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+
+var r_2 = '<script type="text/javascript">var cpro_id="u1397867";(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"300",rsi1:"380",pat:"6",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",ptbg:"90",piw:"0",pih:"0",ptp:"0"}</script><script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>';
+
+var fudong = '<scri'+'pt type="text/javascript">var cpro_id="u1397867";(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"300",rsi1:"380",pat:"6",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",ptbg:"90",piw:"0",pih:"0",ptp:"0"}</sc'+'ript>';
+fudong += '<scrip'+'t src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></scr'+'ipt>';
+
+var gg_l = '<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+gg_l += '<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="6438537127"></ins>';
+gg_l += '<scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+
+var gg_r = '<script type="text/javascript">var cpro_id = "u811641";</script>';
+gg_r += '<scri'+'pt src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></sc'+'ript>';
+
+var r1gg='<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+r1gg+='<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="2817964327"></ins><scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+/*
+var r1gg = '<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-1247620132145618" data-ad-slot="2253650178" data-override-format="true" data-page-url="http://www.jb51.net"></ins><scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+*/
+var bd200 = '<scri'+'pt type="text/javascript">var cpro_id="u2261513";(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"300",rsi1:"300",pat:"6",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",ptbg:"90",piw:"0",pih:"0",ptp:"0"}</sc'+'ript>';
+bd200 += '<scrip'+'t src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></scr'+'ipt>';
+
+var dxy728 = '<a href="http://www.33ip.com" target="_blank"><img src="http://files.jb51.net/image/33ip_728.gif"></a>';
+var dxy230 = '<a href="http://vzidc.taobao.com/" target="_blank"><img src="http://files.jb51.net/image/vzidc230.gif" width=260 height=90></a>';
+
+var qq_index = '<script type="text/javascript">var cpro_id="u1424765";</script>';
+qq_index += '<scri'+'pt src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></sc'+'ript>';
+
+jbMap['logo_m'] = function() {
+	document.writeln(logo_m);
+};
+
+jbMap['logo_r'] = function() {
+	document.writeln(logo_r);
+};
+
+jbMap['idctu'] = function() {
+	document.writeln(idctu);
+};
+
+jbMap['tonglanbd'] = function() {
+	document.writeln(tonglanbd);
+};
+
+jbMap['tonglan1'] = function() {
+	document.writeln(tonglan1);
+};
+
+jbMap['tonglan1_2'] = function() {
+	document.writeln(tonglan1_2);
+};
+
+jbMap['tonglan2'] = function() {
+	document.writeln(tonglan2);
+};
+
+jbMap['tonglan2_1'] = function() {
+	document.writeln(tonglan2_1);
+};
+
+jbMap['tonglan2_2'] = function() {
+	document.writeln(tonglan2_2);
+};
+
+jbMap['tonglan3_1'] = function() {
+	document.writeln(tonglan3_1);
+};
+
+jbMap['tonglan3_2'] = function() {
+	document.writeln(tonglan3_2);
+};
+
+jbMap['botad'] = function() {
+	document.writeln(botad);
+};
+
+jbMap['idctu1'] = function() {
+	document.writeln(idctu1);
+};
+
+jbMap['idctu2'] = function() {
+	document.writeln(idctu2);
+};
+
+
+jbMap['art_up'] = function() {
+	document.writeln(art_up);
+};
+
+jbMap['art_down'] = function() {
+	document.writeln(art_down);
+};
+
+jbMap['art_down2'] = function() {
+	document.writeln(art_down2);
+};
+
+jbMap['side_up'] = function() {
+	document.writeln(side_up);
+};
+
+jbMap['r_2'] = function() {
+	document.writeln(r_2);
+};
+
+jbMap['fudong'] = function() {
+	document.writeln(fudong);
+};
+
+
+jbMap['gg_l'] = function() {
+	document.writeln(gg_l);
+};
+
+jbMap['gg_r'] = function() {
+	document.writeln(gg_r);
+};
+
+jbMap['r1gg'] = function() {
+	document.writeln(r1gg);
+};
+
+jbMap['bd200'] = function() {
+	document.writeln(bd200);
+};
+
+
+jbMap['bctools'] = function() {
+	document.writeln(bctools);
+};
+
+jbMap['dxy728'] = function() {
+	document.writeln(dxy728);
+};
+
+jbMap['dxy230'] = function() {
+	document.writeln(dxy230);
+};
+
+jbMap['qq_index'] = function() {
+	document.writeln(qq_index);
+};
+
+if (jQuery) { 
+$jb51_top = $('#jb51_topbar');
+if($jb51_top){
+    $jb51_top.html('<div class="userbar"><a href="http://tougao.jb51.net" target="_blank">Í¶¸åÖĞĞÄ</a><img style="width:32px; height:22px" src="http://img.jb51.net/skin/2016/images/newn.gif" alt="hot"></div>');
+}
+
+$addnav = $('.watch');
+if($addnav){
+    $addnav.before('<li><div class="one"><a href="http://wxbj.jb51.net" target="_blank">Î¢ĞÅ±à¼­Æ÷</a></div></li>');
+}
+
+if ("undefined" != typeof ourl) {
+    if (ourl) {
+        $content = $('#content');
+        if($content){
+			if(ourl.indexOf(":") > 0 ){
+            $content.append('<p>Ô­ÎÄÁ´½Ó£º' + ourl +'</p>');
+			}else{
+			$content.append('<p>Ô­ÎÄÁ´½Ó£º' + base64decode(ourl) +'</p>');
+			}
+        }
+    }
+}
+/*
+var shequlink = '<div class="morejb51"><fieldset><legend><div class="wxqq-bg">ÈçÓĞÒÉÎÊÇëÉ¨Ãè»òµã»÷ÒÔÏÂ·½Ê½·´À¡¸øÎÒÃÇ</div></legend><table style="border:none;"><tbody><tr><td style="border:none;"><img src="http://files.jb51.net/images/erweima/gongzhonghao.png"></td><td style="border:none;"><a href="http://shequ.jb51.net" target="_blank"><img src="http://files.jb51.net/images/erweima/shequ.png"></a></td><td style="border:none;"><a href="http://youhui.jb51.net" target="_blank"><img src="http://files.jb51.net/images/erweima/youhuiquan.png"></a></td></tr><tr><td style="border:none;">½Å±¾Ö®¼ÒÎ¢ĞÅ¹«ÖÚºÅ</td><td style="border:none;"><a href="http://shequ.jb51.net" target="_blank">½Å±¾Ö®¼ÒÖªÊ¶ÉçÇø</a></td><td style="border:none;"><a href="http://youhui.jb51.net" target="_blank">ÌìÃ¨ÌÔ±¦ÄÚ²¿ÓÅ»İÈ¯</a></td></tr></tbody></table></fieldset></div>'
+$content = $('#content');
+        if($content){
+            $content.append(shequlink);
+        }
+*/
+var gotopcode = " \
+  <div class=\"gotop hide\" id=\"gotop\">\
+   <a href=\"javascript:;\" class=\"jb51-weixin\"></a>\
+  <div class=\"jb51-weixin-con hide\"> \
+    <h2 class=\"jb51-weixin-title\">Î¢ĞÅÉ¨Ò»É¨</h2>\
+    <div class=\"jb51-weixin-pic\"> <img src=\"http://img.jb51.net/images/weixin_jb51.gif\" alt=\"½Å±¾Ö®¼ÒÎ¢ĞÅÕËºÅ\" width=\"100\" height=\"100\"> </div>\
+  </div>\
+  <a href=\"http://shequ.jb51.net/\" target=\"_blank\" class=\"question\"><img src=\"http://img.jb51.net/skin/2016/images/hot.gif\" alt=\"hot\"></a>\
+  <a href=\"javascript:;\" class=\"go\"></a>\
+  </div>"
+$('#footer').append(gotopcode);
+$(function(){
+    $(window).on('scroll',function(){
+        var st = $(document).scrollTop();
+        if( st>0 ){
+            if( $('#contents').length != 0  ){
+                var w = $(window).width(),mw = $('#contents').width();
+                if( (w-mw)/2 > 70 )
+                    $('#gotop').css({'left':(w-mw)/2+mw+20});
+                else{
+                    $('#gotop').css({'left':'auto'});
+                }
+            }
+            $('#gotop').fadeIn(function(){
+                $(this).removeClass('hide');
+            });
+        }else{
+            $('#gotop').fadeOut(function(){
+                $(this).addClass('hide');
+            });
+        }   
+    });
+    $('#gotop .go').on('click',function(){
+        $('html,body').animate({'scrollTop':0},500);
+    });
+
+    $('#gotop .jb51-weixin').hover(function(){
+        $('#gotop .jb51-weixin-con').removeClass('hide');
+    },function(){
+        $('#gotop .jb51-weixin-con').addClass('hide');
+    });
+});
+}³Ş$®w      X¡Ù1X¡Ù2=ogŠX¡Ù2   &    :http://common.jb51.net/js/jbLoader.js necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Sat, 11 Feb 2017 16:33:46 GMT
+Content-Length: 24067
+Content-Type: application/x-javascript
+Last-Modified: Sat, 11 Feb 2017 15:00:53 GMT
+Accept-Ranges: bytes
+Etag: "80c0b9a37784d21:1b1b"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Age: 1
+X-Via: 1.1 dianxinxiazai180:2 (Cdn Cache Server V2.0), 1.1 ddx26:3 (Cdn Cache Server V2.0)
+ original-response-headers Date: Sat, 11 Feb 2017 16:33:46 GMT
+Content-Length: 24067
+Content-Type: application/x-javascript
+Last-Modified: Sat, 11 Feb 2017 15:00:53 GMT
+Accept-Ranges: bytes
+Etag: "80c0b9a37784d21:1b1b"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Age: 1
+X-Via: 1.1 dianxinxiazai180:2 (Cdn Cache Server V2.0), 1.1 ddx26:3 (Cdn Cache Server V2.0)
+Connection: keep-alive
+ uncompressed-len 0   ^

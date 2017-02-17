@@ -1,0 +1,259 @@
+;(function(root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(['jquery'], factory);
+    } else if (typeof exports === 'object') {
+        module.exports = factory(require('jquery'));
+    } else {
+        root.hosLightBox = factory(root.jQuery);
+    }
+}(this, function($) {
+    function hosLightBox(options) {
+        this.init();
+        this.options = $.extend({}, this.constructor.defaults);
+        this.option(options);
+    };
+    hosLightBox.defaults = {
+        // Ô­Í¼
+        $originImg: $(".xtjc_info img"),
+        // ËõÂÔÍ¼×î´ó¸öÊý
+        maxThumbCount: 7
+    };
+    hosLightBox.prototype.option = function(options) {
+        $.extend(this.options, options);
+    };
+    hosLightBox.prototype.init = function() {
+        var self = this;
+        $(document).ready(function() {
+            self.build();
+        });
+    };
+    hosLightBox.prototype.build = function() {
+        var self = this;
+        var imgStr = '',
+            thumbStr = '',
+            thumbLiStr = '',
+            lbStr = '',
+            winW = $(window).width(),
+            winH = $(window).height();
+        this.currIdx = 0,
+            this.imgCount = this.options.$originImg.size();
+
+        $('<div id="imgLightbox" unselectable="on" class="imgLightbox"></div>').appendTo('body');
+
+        // ³õÊ¼»¯
+        imgStr = '<div class="lbWrap">\
+                      <div class="lbControl lbPrev"></div>\
+                      <div class="lbControl lbNext"></div>\
+                  	  <div class="lbContent">\
+          		          <img class="lbImg" alt="">\
+                  		  <div class="lbClose"></div>\
+                          <div class="lbControl lbPrev"></div>\
+                          <div class="lbControl lbNext"></div>\
+                  	  </div>\
+                  </div>\
+                  <div class="lbControl lbPrev"></div>\
+                  <div class="lbControl lbNext"></div>\
+                  ';
+        // ´¦ÀíËõÂÔÍ¼
+        for (var i = 0; i < this.imgCount; i++) {
+            thumbLiStr += '<li>\
+                               <div class="lbThumbCover"></div>\
+                               <img src="' + self.options.$originImg.eq(i).attr('src') + '" alt="">\
+                               <div class="lbThumbIdx">' + (i + 1) + '/' + this.imgCount + '</div>\
+                           </li>';
+        }
+        thumbStr = '<div class="lbThumb">\
+                        <div class="lbThumbInner">\
+                    		<ul>' +
+            thumbLiStr +
+            '</ul>\
+                        </div>\
+                	</div>';
+        // ºÏ²¢str
+        lbStr = imgStr + thumbStr;
+
+        this.$lightbox = $('#imgLightbox');
+        this.$lightbox.append(lbStr);
+
+        // »º´æDOM
+        this.$img = this.$lightbox.find('.lbImg');
+        this.$thumbBox = this.$lightbox.find(".lbThumb");
+        this.$thumbInner = this.$thumbBox.find('.lbThumbInner');
+        this.$thumbUl = this.$thumbBox.find('ul');
+        this.$thumbLi = this.$thumbBox.find('li');
+        this.$close = this.$lightbox.find(".lbClose");
+        this.$imgWrap = this.$lightbox.find(".lbWrap");
+        this.$imgContent = this.$imgWrap.find(".lbContent");
+        this.$next = this.$lightbox.find(".lbNext");
+        this.$prev = this.$lightbox.find(".lbPrev");
+
+        // ÉèÖÃthumbboxµÄ¿í
+        this.liW = this.$thumbLi.width() + 14;
+        this.$thumbInner.css({
+            width: this.liW * this.imgCount > this.options.maxThumbCount * this.liW ? this.options.maxThumbCount * this.liW : this.liW * this.imgCount
+        })
+        this.$thumbUl.css({
+            width: this.liW * this.imgCount
+        })
+
+        // »º´æthumbboµÄ¸ß
+        var thumbH = this.$thumbBox.height();
+        // ÉèÖÃ×î´ó¿í¸ß Ðè¼õÈ¥°×¿ò ¸ßÐè¼õÈ¥thumbµÄ¸ß ²¢Áô³öcloseµÄ¸ß¶È
+        this.maxW = this.$imgWrap.width() - 20;
+        this.maxH = winH - thumbH - 40;
+
+        // ÉèÖÃimgWrapµÄ¸ß
+        this.$imgWrap.css("height", this.maxH);
+
+        // ³õÊ¼»¯´óÍ¼µÄmarginTop Ê¹¾ÓÖÐ
+        // this.$imgContent.css({
+        //     marginTop: this.maxH * 0.5
+        // });
+
+        // ³õÊ¼»¯Í¼Æ¬ÇÐ»»°´Å¥ÇøÓò
+        this.$next.css("height", winH - thumbH);
+        this.$prev.css("height", winH - thumbH);
+
+        // ½ûÖ¹Ñ¡ÖÐ
+        this.$lightbox.bind('selectstart', function() {
+            return false;
+        });;
+
+        //¸øÍ¼Æ¬Ìí¼ÓÍâ¿ò ¼ÓÈëÊó±ê¾­¹ýÌáÊ¾µã»÷·Å´óÐ§¹û
+        this.options.$originImg.wrap('<div class="oringImgBox"></div>');
+        $('.oringImgBox').append('<span class="clickTips"></span>')
+        $('.clickTips').on('click', function () {
+            $(this).siblings('img').click();
+        })
+
+        //µã»÷Í¼Æ¬ÊÂ¼þ
+        this.options.$originImg.each(function(index) {
+            $(this).on('click', function() {
+                self.currIdx = index;
+                self.changeImg();
+                // ÏÔÊ¾µ¯³ö²ã
+                self.$lightbox.show();
+            })
+        });
+        // ÉÏÒ»ÕÅµã»÷ÊÂ¼þ
+        this.$prev.on("click", function(){
+            self.changeImg("prev");
+        });
+        // ÏÂÒ»ÕÅµã»÷ÊÂ¼þ
+        this.$next.on("click", function(){
+            self.changeImg("next");
+        })
+        // ËõÂÔÍ¼µã»÷ÊÂ¼þ
+        this.$thumbLi.each(function (index) {
+            $(this).click(function () {
+                self.currIdx = index;
+                self.changeImg();
+            })
+        })
+        //¹Ø±Õµ¯³ö²ã
+        this.$lightbox.on("click", ".lbClose", function() {
+            self.$lightbox.hide();
+        });
+    };
+    hosLightBox.prototype.changeImg = function(e) {
+        var self = this;
+        if (e == "prev") {
+            if (this.currIdx == 0) {
+                return;
+            }
+            this.currIdx--;
+        }
+        if (e == "next") {
+            if (this.currIdx == (this.imgCount - 1)) {
+                return;
+            }
+            this.currIdx++;
+        }
+
+        //Òþ²Ø¹Ø±Õ°´Å¥
+        this.$close.removeClass("show");
+
+        this.$currImg = this.options.$originImg.eq(this.currIdx);
+
+        var currW, currH, scale,
+            natural = this.getNaturalSize(this.$currImg[0]);
+
+        //´¦ÀíÍ¼Æ¬Ëõ·Å
+        currW = natural.w;
+        currH = natural.h;
+
+        if (currW >= this.maxW) {
+            scale = this.maxW / natural.w
+            currW = this.maxW;
+            currH = natural.h * scale;
+        }
+        if (currH >= this.maxH) {
+            scale = this.maxH / natural.h;
+            currH = this.maxH;
+            currW = natural.w * scale;
+        }
+
+        // ÉèÖÃ´óÍ¼Â·¾¶
+        this.$img.attr("src", this.$currImg.attr("src"));
+
+        //ÉèÖÃ´óÍ¼¾ÓÖÐ
+        this.$imgContent.stop().animate({
+            width: currW,
+            height: currH,
+            marginTop: -(currH-30) * 0.5,
+            marginLeft: -currW * 0.5
+        }, 300, function() {
+            // ¶¯»­½áÊøºó»Øµ÷ÏÔÊ¾¹Ø±Õ°´Å¥
+            self.$close.addClass("show");
+        });
+
+        //ÉèÖÃthumbÑ¡ÖÐÑùÊ½
+        this.$thumbLi.removeClass("active").eq(this.currIdx).addClass("active");
+        if (this.imgCount > this.options.maxThumbCount) {
+            if (this.currIdx < parseInt(this.options.maxThumbCount/2)) {
+                this.$thumbUl.stop().animate({
+                    left: 0
+                }, 300);
+            } else if (this.currIdx >= this.imgCount - parseInt(this.options.maxThumbCount/2)) {
+                this.$thumbUl.stop().animate({
+                    left: -this.liW * (this.imgCount - this.options.maxThumbCount)
+                }, 300);
+            } else {
+                this.$thumbUl.stop().animate({
+                    left: -this.liW * (this.currIdx - parseInt(this.options.maxThumbCount/2))
+                }, 300)
+            }
+        }
+    };
+    hosLightBox.prototype.getNaturalSize = function(img) {
+        var image = new Image();
+        image.src = img.src;
+        var naturalSize = {
+            w: image.width,
+            h: image.height
+        };
+        return naturalSize;
+    };
+    return new hosLightBox();
+}));
+I  Æqf      X¡ÚƒX¡Úˆ=ohtX¦ž   <    :http://static.xitongzhijia.net/theme/2015/js/hosLightBox.js necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Sat, 11 Feb 2017 11:57:19 GMT
+Server: nginx/1.8.0
+Content-Type: application/javascript
+Content-Length: 8014
+Last-Modified: Tue, 20 Dec 2016 03:35:11 GMT
+Etag: "5858a6ef-1f4e"
+Accept-Ranges: bytes
+Age: 1
+X-Via: 1.1 ngdxin36:8 (Cdn Cache Server V2.0)
+ original-response-headers Date: Sat, 11 Feb 2017 11:57:19 GMT
+Server: nginx/1.8.0
+Content-Type: application/javascript
+Content-Length: 8014
+Last-Modified: Tue, 20 Dec 2016 03:35:11 GMT
+Etag: "5858a6ef-1f4e"
+Accept-Ranges: bytes
+Age: 1
+X-Via: 1.1 ngdxin36:8 (Cdn Cache Server V2.0)
+Connection: keep-alive
+ uncompressed-len 0   N

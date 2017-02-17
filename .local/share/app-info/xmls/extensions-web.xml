@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components origin="extensions-web" version="0.8">
+  <component type="shell-extension">
+    <id>EasyScreenCast@iacopodeenosee.gmail.com.shell-extension</id>
+    <name>EasyScreenCast</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>### The extension is now developed and maintained by tobias47n9e https://github.com/tobias47n9e ###</p><p>This extension simplifies the use of the video recording function integrated in gnome shell, allows quickly to change the various settings of the desktop recording.</p><p>SOURCE CODE -&gt;  http://github.com/EasyScreenCast/EasyScreenCast</p><p>VIDEO -&gt;  https://youtu.be/81E9AruraKU</p><p>**NOTICE** if an error occurs during the update is recommended to reload GNOME Shell (Alt + F2, &apos;r&apos;) and reload the extension&apos;s installation page.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/690/easyscreencast/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_690.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="34"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">EasyScreenCast@iacopodeenosee.gmail.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>Random_Walls@Antares.shell-extension</id>
+    <name>Random Walls</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Change desktop and lockscreen wallpapers randomly</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/1000/random-walls/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_1000.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="15"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">Random_Walls@Antares</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>RecentItems@bananenfisch.net.shell-extension</id>
+    <name>Recent Items</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Adds an icon for recently used items at the top panel; clear list by click... New version: Settings for: number of items, number of items under &quot;more&quot; and blacklisting options are defined at the top of extension.js (see https://github.com/bananenfisch/RecentItems for more infos).</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/72/recent-items/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_72.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="15"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">RecentItems@bananenfisch.net</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>alternate-tab@gnome-shell-extensions.gcampax.github.com.shell-extension</id>
+    <name>AlternateTab</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Substitute Alt-Tab with a window based switcher that does not group by application. This extension is part of Classic Mode and is officially supported by GNOME. Please do not report bugs using the form below, use GNOME Bugzilla instead.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/15/alternatetab/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_15.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="33"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">alternate-tab@gnome-shell-extensions.gcampax.github.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>apps-menu@gnome-shell-extensions.gcampax.github.com.shell-extension</id>
+    <name>Applications Menu</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Add a category-based menu for applications. This extension is part of Classic Mode and is officially supported by GNOME. Please do not report bugs using the form below, use GNOME Bugzilla instead.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/6/applications-menu/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_6.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="32"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">apps-menu@gnome-shell-extensions.gcampax.github.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>bitcoin-markets@ottoallmendinger.github.com.shell-extension</id>
+    <name>Bitcoin Markets</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Display info on various Bitcoin exchanges.   Tip address 1645A1qhW3FHxr2JLdqLuYGQ6QSmN5BbNS.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/648/bitcoin-markets/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_648.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="30"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">bitcoin-markets@ottoallmendinger.github.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>caffeine@patapon.info.shell-extension</id>
+    <name>Caffeine</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Disable the screensaver and auto suspend</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/517/caffeine/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_517.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="26"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">caffeine@patapon.info</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>disconnect-wifi@kgshank.net.shell-extension</id>
+    <name>Disconnect Wifi</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Adds a Disconnect option for Wifi in status menu, when a network is connected. Shows a Reconnect option, after network is disconnected.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/904/disconnect-wifi/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_904.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="15"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">disconnect-wifi@kgshank.net</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>drive-menu@gnome-shell-extensions.gcampax.github.com.shell-extension</id>
+    <name>Removable Drive Menu</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>A status menu for accessing and unmounting removable devices.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/7/removable-drive-menu/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_7.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="32"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">drive-menu@gnome-shell-extensions.gcampax.github.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>extensions@abteil.org.shell-extension</id>
+    <name>Extensions</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Enable/disable easily gnome shell extensions from a menu in the top panel. Also allows to edit the settings of the extensions. Feedback welcome!</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/1036/extensions/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_1036.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="8"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">extensions@abteil.org</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>hibernate-status@dromi.shell-extension</id>
+    <name>Hibernate Status Button</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Adds a Hibernate button in Status menu. Using Alt modifier, you can also select Hybrid Sleep instead.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/755/hibernate-status-button/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_755.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="10"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">hibernate-status@dromi</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>lockkeys@vaina.lt.shell-extension</id>
+    <name>Lock Keys</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Numlock &amp; Capslock status on the panel</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/36/lock-keys/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_36.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="25"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">lockkeys@vaina.lt</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>nohotcorner@azuri.free.fr.shell-extension</id>
+    <name>No Topleft Hot Corner</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>This extension disables the top left hot corners. You can still click on Activities or press the dedicated key to reach the overview. Since 3.8, should work with other extensions modifying the Activities button. On versions prior to 3.8, may not disable other hotcorners in multiscreen configurations and won&apos;t work on fallback/flashback mode.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/118/no-topleft-hot-corner/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_118.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="14"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">nohotcorner@azuri.free.fr</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>nothing-to-say@extensions.gnome.wouter.bolsterl.ee.shell-extension</id>
+    <name>Nothing to say</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Unmute the microphone only when you have something to say.</p><p>Please do NOT use the comments for bug reports; use the issue tracker on github instead.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/1113/nothing-to-say/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_1113.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="1"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">nothing-to-say@extensions.gnome.wouter.bolsterl.ee</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>notifications-alert-on-user-menu@hackedbellini.gmail.com.shell-extension</id>
+    <name>Notifications Alert</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Whenever there is an unread notification (e.g. chat messages), blinks the message in the user&apos;s menu with a color chosen by the user.</p><p>Now configurable (3.4+ only)!! Alert color and blink rate can be changed on settings ;)</p><p>If you have any question, be sure to take a look at the FAQ: http://goo.gl/lmwtW</p><p>Credits: The idea of painting the message on user&apos;s menu was borrowed from &apos;Pidgin Persistent Notification&apos; extension by nemo. The code itself has some parts forked from &apos;Message Notifier&apos; extension by barisione, &apos;Media player indicator&apos; extension by eon and convenience.js from git.gnome.org/gnome-shell-extensions. The blink idea and it&apos;s initial code was written by hossman. The initial gnome 3.10 support was done by Anthony25. The filtering support was done by ilgarmehmetali</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_258.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="32"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">notifications-alert-on-user-menu@hackedbellini.gmail.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>openweather-extension@jenslody.de.shell-extension</id>
+    <name>OpenWeather</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Weather extension to display weather information from https://openweathermap.org/ or https://darksky.net for almost all locations in the world. For openweathermap.org, you can either use the extensions default-key or register at http://openweathermap.org/appid and set the appropriate switch in the preferences dialog to &quot;off&quot;. For Dark Sky you have to register at https://darksky.net/dev/register and get a personal API-key.</p><p>Since version 29 this extensions uses coordinates to store the locations and makes the names editable to support multiple weather-providers! If you update from versions prior to 29 to 29 or greater (with darksky.net - support) you have to recreate your locations.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/750/openweather/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_750.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="81"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">openweather-extension@jenslody.de</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>panel-osd@berend.de.schouwer.gmail.com.shell-extension</id>
+    <name>Panel OSD</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Configuring where on the (main) screen notifications will appear, instead of just above the message tray</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/708/panel-osd/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_708.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="31"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">panel-osd@berend.de.schouwer.gmail.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>places-menu@gnome-shell-extensions.gcampax.github.com.shell-extension</id>
+    <name>Places Status Indicator</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Add a menu for quickly navigating places in the system. This extension is part of Classic Mode and is officially supported by GNOME. Please do not report bugs using the form below, use GNOME Bugzilla instead.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/8/places-status-indicator/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_8.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="34"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">places-menu@gnome-shell-extensions.gcampax.github.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>sound-output-device-chooser@kgshank.net.shell-extension</id>
+    <name>Sound Input &amp; Output Device Chooser</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Shows a list of sound output and input devices (similar to gnome sound settings) in the status menu below the volume slider. Various active ports like HDMI , Speakers etc. of the same device are also displayed for selection</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/906/sound-output-device-chooser/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_906.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="16"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">sound-output-device-chooser@kgshank.net</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>suspend-button@laserb.shell-extension</id>
+    <name>Suspend Button</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Allows to modify the suspend/shutdown button in the status menu.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/826/suspend-button/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_826.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="17"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">suspend-button@laserb</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>todo.txt@bart.libert.gmail.com.shell-extension</id>
+    <name>Todo.txt</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>A Gnome shell interface for todo.txt. </p><p>Todo.txt is a future-proof syntax for tasks (not made by me), for more info: http://todotxt.com/</p><p>Some examples: Task: Basic task (A) Task: High priority task Task @project +context: Task is part of project and has a certain context x 2013-08-22 Task: Task was completed on the 22nd of August</p><p>For more info about the syntax: https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format</p><p>Quick start: When you first enable the extension, chances are high you&apos;ll see a [X] in your top panel. If you click the [X], you will be able to choose between creating the necessary files automatically or selecting your own existing files to be used with the extension.</p><p>Please use the issue tracker on the homepage to report bugs and/or file feature requests, this makes tracking easier for me. Thanks!</p><p>See the included CHANGELOG.md for info about changes between different versions, or see it online: https://bitbucket.org/bartl/todo.txt-bart.libert.gmail.com/raw/tip/CHANGELOG.md</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/570/todotxt/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_570.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="21"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">todo.txt@bart.libert.gmail.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>user-theme@gnome-shell-extensions.gcampax.github.com.shell-extension</id>
+    <name>User Themes</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Load shell themes from user directory.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/19/user-themes/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_19.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="29"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">user-theme@gnome-shell-extensions.gcampax.github.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>windowoverlay-icons@sustmidown.centrum.cz.shell-extension</id>
+    <name>WindowOverlay Icons</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Add application icons to window overview</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/302/windowoverlay-icons/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_302.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="24"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">windowoverlay-icons@sustmidown.centrum.cz</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>workspace-grid@mathematical.coffee.gmail.com.shell-extension</id>
+    <name>Workspace Grid</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Arranges workspaces in a configurable grid. Also: * implements keybindings for left/right workspace navigation (up/down are already implemented) * updates workspaces sidebar with grid configuration (use Remove Workspaces Sidebar if you don&apos;t want it).</p><p>You may also wish to consider instead of/with this extension: Frippery Bottom Panel (already has workspace grid functionality if you want a bottom panel); Frippery Static Workspaces (holds the number of workspaces static and skips all the workspace grid stuff); Remove Workspaces Sidebar; Workspace Indicator Extension (textual indicator/workspace switcher); WorkspaceBar (graphical indicator/workspace switcher); Workspace navigator extension (use arrow keys to navigate workspaces in the Overview). See homepage for more details.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/484/workspace-grid/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_484.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="21"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">workspace-grid@mathematical.coffee.gmail.com</value>
+    </metadata>
+  </component>
+  <component type="shell-extension">
+    <id>workspace-indicator@gnome-shell-extensions.gcampax.github.com.shell-extension</id>
+    <name>Workspace Indicator</name>
+    <summary>GNOME Shell Extension</summary>
+    <description><p>Put an indicator on the panel signaling in which workspace you are, and give you the possibility of switching to another one.</p></description>
+    <icon type="stock">application-x-addon-symbolic</icon>
+    <categories>
+      <category>Addons</category>
+      <category>ShellExtensions</category>
+    </categories>
+    <project_license>GPL-2.0+</project_license>
+    <url type="homepage">https://extensions.gnome.org/extension/21/workspace-indicator/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org//static/extension-data/screenshots/screenshot_21.png</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release version="31"/>
+    </releases>
+    <metadata>
+      <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
+      <value key="GnomeSoftware::Plugin">shell-extensions</value>
+      <value key="shell-extensions::uuid">workspace-indicator@gnome-shell-extensions.gcampax.github.com</value>
+    </metadata>
+  </component>
+</components>
